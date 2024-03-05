@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.ListarVeiculo"
+      prefWidth="600.0" prefHeight="400.0">
+    <MenuBar VBox.vgrow="NEVER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Menu">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Close" onAction="#voltarAoMenu"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <AnchorPane prefHeight="380.0" prefWidth="600.0">
+        <children>
+            <ListView fx:id="veiculos" layoutX="6.0" layoutY="88.0" prefHeight="200.0" prefWidth="592.0"/>
+            <Label layoutX="240.0" layoutY="35.0" text="Lista de veículos"/>
+            <Button layoutX="258.0" layoutY="315.0" mnemonicParsing="false" onAction="#voltarAoMenu" text="Voltar"/>
+        </children>
+    </AnchorPane>
+</VBox>
